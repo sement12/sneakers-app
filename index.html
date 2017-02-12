@@ -1,74 +1,189 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <link rel="stylesheet" href="./styles.css">
+
+<!--links to foreign style sheets-->
+<!--google stylesheets-->
+    <link ref="https://fonts.googleapis.com/css?family=Oswald|Pangolin"
+    rel="stylesheets">
+<!--fontawesome-->
+    <link ref="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<!--local style sheet comes after the foreign style sheets-->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet"  type="text/css" href="./styles.css">
   </head>
   <body>
     <header>
-        <img src="./images/logo.jpg">
+      <header class="top-nav">
+        <div class="sneaker-logo">
+
+          <img src="./images/logo.jpg" alt="sneaker logo">
+        </div>
+        <ul>   <!--start of unordered list-->
+          <div class="leftnav-list">  <!--start of left justified nav list-->
+            <li>MEN</li>
+            <li>WOMEN</li>
+            <li>BOYS</li>
+            <li>GIRLS</li>
+            <li>CUSTOMIZE</li>
+
+          </div>
+
+          <div class="rightnav-list">    <!--start of right justified nav list-->
+            <li>Help</li>
+            <li>My Account</li>
+            <i class="fa fa-shopping-cart" src="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" aria-hidden="true"></i>
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <li>Shopping Cart (2)</li>
+          </div>
+        </ul>  <!-- end of unordered list section-->
+
+
+
+      </header>   <!-- end of header id=top nav-->
+<!--this is the shopping cart from fontawesome.io. style this like you would for a normal font/text
+
+    <i class="fa fa-shopping-cart" aria-hidden="true"><i/>
     </header>
 
-    <section class="shoe-background-red">
-      <a href="google.com">
-        Back to shoes
-      </a>
+<!--first section---->
 
-      <img src="./images/shoe1.png">
+    <section class="shoe-background-red">
+<!--creating first parent box or container with top sneaker image and link-->
+      <div class="blacksneaker">
+
+<!--add the left pointing arrow icon before and on same line as the back to shoes link-->
+        <i class="fa fa-arrow-left" src="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" aria-hidden="true"></i>
+<!--link-->
+        <a href="google.com">
+          Back to All shoes
+        </a>
+<!--image-->
+
+        <img class="middle" src="./images/shoe1.png" alt="photo of black sneakers">
+
+      </div>
+       <!--end of div class blacksneaker-->
+<!--start of Quick sneaker div class-->
+      <div class="Quicksneaker-divclass">
       <h1>
         Quick Sneakers
       </h1>
-      <p>
-        blah blah blah blah blah
-      </p>
+        <div class="seasons">Spring/Summer 2017</div>
 
-      <nav>
-        <a href="google.com">
-          Read the reviews
-        </a>
+      <section class="float-right-img-par";
+        <p>
+          blah blah blah blah blah
+          <a href="google.com">
+            Read the reviews
+          </a>
+        </p>
+      </section>
 
-      </nav>
       <span>
         $120.00
       </span>
-      <nav>
+      <button type="button">Buy Now</button>
+
         <a href="google.com">
-          Buy Now
+
         </a>
-      <nav>
+
+      </div>   <!--end of the quicksneaker-divclass-->
     </section>
 
     <section class="product-description">
-      <h3>Exciting Topic</h3>
 
-        <p>
-          Content here about excitng topic
-        </p>
+      <div class="product-detail-header">
 
-      <h1>Find Your Shoe Size & Fit</h1>
-        <p>content here about shoe size</p>
-      <h1>What Our Customers Are Saying!</h1>
-        <p>Dont take our word for it paragraph</p1>
+        <ul id="product-header">
+          <li>Product Details</li>
+          <li>Size & Fit</li>
+          <li>Reviews</li>
+
+        </ul>
+      </div>
+      <ul>     <!--start of unordered list of exciting topic division-->
+        <li>
+          <h1>Exciting Topic</h1>
+            <p>
+              Content here about excitng topic
+            </p>
+        </li>
+        <li>
+          <h1>Exciting Topic</h1>
+            <p>
+              Content here about excitng topic
+            </p>
+        </li>
+
+        <li>
+          <h1>Find Your Shoe Size & Fit</h1>
+            <p>content here about shoe size</p>
+        </li>
+
+        <li>
+          <h1>What Our Customers Are Saying!</h1>
+            <p>Dont take our word for it paragraph</p1>
+        </li>
+
+    </section>  <!--end section product description-->
+
+    <div class="Shop-recommended-Shoes">
       <h1>Shop Recommended Shoes</h1>
-    </section>
-
+    </div>     <!--end of title-->
     <section class="product-images-description">
-      <div>
-        <img src="./images/shoe2.png">
-        <h3>Funny Sneakers</h3>
-        <span>$120.00</span>
-        <img src="./images/shoe3.png">
-        <span>$120.00</span>
-        <img src="./images/shoe4.png">
-          <span>$120.00</span>
-    </section>
+
+        <div class="shoe2">
+
+          <img src="./images/shoe2.png">
+          <h3>Funny Sneakers</h3>
+
+            <div class="seasons">Spring/Summer 2017</div>
+            <span>$120.00</span>
+        </div> <!--end of div class shoe2-->
+        <div class="shoe3">
+          <img src="./images/shoe3.png">
+          <h3>Nimble Sneakers</h3>
+            <div class="seasons">Spring/Summer 2017</div>
+            <span>$120.00</span>
+        </div> <!--end of div class shoe3-->
+        <div class="shoe4">
+          <img src="./images/shoe4.png">
+          <h3>Cute Sneakers</h3>
+            <div class="seasons">Spring/Summer 2017</div>
+            <span>$120.00</span>
+          </div> <!--end of div class shoe4-->
+
+        </section> <!--end of section product image description
+        -->
+
+
+
     <footer>
           <img src="./images/logo.jpg">
+
+            <div class="footernav-list">  <!--start of left justified nav list-->
+              <ul>
+                <li>Men</li>
+                <li>Women</li>
+                <li>Boys</li>
+                <li>Girls</li>
+                <li>Customize</li>
+              </ul>
+            </div>
+
+
+          <div class="footer-ship-list">
+          <ul>
+            <li>Shipping</li>
+            <li>Terms & Conditions</li>
+            <li>@ Copyright Sneaker Shop LLC</li>
+
+          </ul>
+          </div>
+
     </footer>
-
-
-
-
-
-
   </body>
 </html>

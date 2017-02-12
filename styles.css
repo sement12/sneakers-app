@@ -1,10 +1,174 @@
 
-.shoe-background-red {
-  background-color: red;
+* { box-sizing: border-box;
 }
+/*  * is a selector that grabs all the elements on the
+page and when it's specified the widths of an element, it
+includes the border, not just the content and padding. it makes the boxes sit
+next to each other horizontally.*/
+
+
+/*since the body has some default styles applied
+to it, you can eleminate the margin, so the
+content reaches the edge of the webpage*/
+body {
+  margin:0;
+}
+
+.logo.jpg {
+  margin-left: 100px;
+
+}
+
+/*this is giving the top container a background color of orange,
+and padding to the left and bottom of the box*/
+
+.shoe-background-red {
+  background-color: rgb(219, 66, 42);
+  padding-left: 200px;
+  padding-bottom: 50px;
+
+}
+/* back to All shoes link font color is white and there's a underline
+*/
+a {
+  color: white;
+  text-decoration: underline;
+}
+
+/*top left navigation links all show up horizontally, algined to the left,
+no bullet points, orange color*/
+.leftnav-list > li{
+  display:inline;
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+  margin-right: 10px;
+  color: rgb(219, 66, 42);
+
+}
+/*top right nav links show up horizontally, no bullet points, orange color */
+.rightnav-list > li{
+  display:inline;
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+  margin-right: 10px;
+  color: rgb(219, 66, 42);
+
+/* the middle class contains the image of the black sneaker
+up top is 75% of it's container-the sneaker also needs to sit directly
+below the back to all shoes link */
+
+}
+i {
+  font-size: 10px;
+}
+
+.middle {
+  width:  75%;
+  display: block;
+}
+
+.blacksneaker {
+  padding-top: 40px;
+}
+
+
+/*add some top padding to the black sneaker image so
+some space between it and the back to all shoes link*/
+
+img.middle {
+  padding-top: 20px;
+}
+/*give the text color in this section white*/
+
+.Quicksneaker-divclass {
+  color: white;
+
+}
+
+/*
+.Quicksneaker-divclass > h1 {
+  padding: 0;
+  margin: 0;
+
+}
+
+/*the Spring/summer 2017 text needs to have a
+font color of red and some space below it*/
+
+/*this section's font color is red*/
+
+.seasons {
+  color: red;
+  margin-bottom: 10px;
+
+}
+
+.float-right-img-par {
+  display: inline;
+  padding-right: 20px;
+
+}
+/*to give this button some space between it and the $120.*/
+
+
+button {
+  margin-left: 10px;
+}
+
+/*the yellow color is only so i know where the box
+borders are*/
 .product-description {
   background-color: yellow;
 }
+.product-header {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  padding-left: 200px;
+}
+/*the h3's are the titles of the funny, nimble and cute sneakers-*/
+
+ h3 {
+  margin: 0;
+}
+.product-images-description {
+  background-color: rgb(219, 66, 42);
+}
+.Shop-recommended-Shoes {
+  text-align: center;
+
+}
+.shoe2 {
+  padding-left: 100px;
+  color: white;
+}
+.shoe3 {
+  padding-left: 100px;
+  color: white;
+}
+.shoe4 {
+  padding-left: 100px;
+  color: white;
+}
+.footernav-list > ul {
+  display: flex;
+  color: rgb(219, 66, 42);
+  padding: 1em;
+  margin: 0;
+
+}
+.footer-ship-list > ul {
+  display: flex;
+  color: rgb(219, 66, 42);
+  padding: 1em;
+  margin: 0;
+
+}
+
 footer {
-  background-color: blue;
+  background-color: white;
 }
