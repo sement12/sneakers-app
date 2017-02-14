@@ -164,13 +164,18 @@ ul {
   margin: 0;
   padding: 1em;
   margin-left: 10px;
+}
+
+.footernav-list > ul > li {
+  padding-left: 10px;
+}
 
 }
 .footer-ship-list > ul {
-  display: flex;
+  
   color: rgb(219, 66, 42);
-  padding: 1em;
   margin: 0;
+  padding-left: 0;
 
 }
 
